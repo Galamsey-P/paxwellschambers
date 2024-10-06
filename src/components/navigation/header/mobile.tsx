@@ -6,7 +6,8 @@ import {
     SheetHeader,
     SheetTrigger,
     SheetClose,
-    SheetFooter
+    SheetFooter,
+    SheetTitle
 } from "@/components/ui/sheet";
 import Logo from "../logo";
 import { Menu } from "lucide-react";
@@ -28,6 +29,7 @@ export default function MobileNav() {
             <SheetContent>
                 <SheetHeader>
                     <Logo variant="colored" className="mx-auto w-[75px] py-4" />
+                    <SheetTitle></SheetTitle>
                     <SheetDescription className="font-sans mx-auto text-center w-full max-w-[80%]">
                         Trusted legal partners that
                         bring you real, working
@@ -44,7 +46,7 @@ export default function MobileNav() {
                             </Link>
                         </SheetClose>
                     ))}
-                    <SheetClose className="w-full">
+                    <SheetClose asChild className="w-full">
                         <Link href="/contact" >
                             <Button className="w-full text-base">
                                 Contact Us
