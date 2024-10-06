@@ -4,7 +4,7 @@ import { LogoVariant } from '@/components/navigation/logo/index.types';
 import { NavigationContext } from '@/context/navigation';
 
 
-export function NavigationProvider({ children }: { children: ReactNode; }) {
+export default function NavigationProvider({ children }: { children: ReactNode; }) {
     const [isTransparent, setIsTransparent] = useState(false);
     const [logoVariant, setLogoVariant] = useState<LogoVariant>('colored');
 
