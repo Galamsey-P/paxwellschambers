@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"network": "next dev -H 192.168.1.49",
+		"network": "next dev -H 192.168.100.36",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint"
@@ -12,6 +12,7 @@
 	"dependencies": {
 		"@hookform/resolvers": "^3.9.0",
 		"@radix-ui/react-aspect-ratio": "^1.1.0",
+		"@radix-ui/react-avatar": "^1.1.1",
 		"@radix-ui/react-dialog": "^1.1.1",
 		"@radix-ui/react-label": "^2.1.0",
 		"@radix-ui/react-navigation-menu": "^1.2.0",
