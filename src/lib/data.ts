@@ -91,4 +91,39 @@ export const CLIENTS = [
         name: "Invert",
         image: "clients/invert.png"
     },
-]
+];
+
+export const FOOTER_CONTACT = {
+    address: "18 Senchi Street, Accra, Ghana",
+    emails: ["admin@paxandewellslegal.com", "info@pax&well.com"]
+};
+
+export const CONTACT = {
+    emails: ["admin@paxandwellslegal.com", "edubikmahama@paxandwellslegal.com", "associates@gmail.com"],
+    phones: ["+233244267080", "+233302268484"],
+};
+
+
+export const PRACTICES2 = [
+    "Corporate/Company Law",
+    "Acquisitons & Mergers",
+    "Construction",
+    "Oil & Gas",
+    "Labour/Employment",
+    "Renewable Energy",
+    "Immovable Property Law",
+    "Human Rights",
+    "Banking & Finance",
+    "Matrimonial Law (Divorce)",
+    "Criminal Law",
+    "Succession",
+    "Information Technology",
+    "Entertainment & Arts",
+    "Debt Recovery",
+    "Medical Negligence",
+    "Intellectual Property",
+    "Law On Adoption",
+    "Insurance Law",
+    "Mining & Natural Resource",
+    "Immigration Law"
+];
