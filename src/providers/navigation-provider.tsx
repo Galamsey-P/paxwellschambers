@@ -5,8 +5,8 @@ import { NavigationContext } from '@/context/navigation';
 
 
 export function NavigationProvider({ children }: { children: ReactNode; }) {
-    const [isTransparent, setIsTransparent] = useState(true);
-    const [logoVariant, setLogoVariant] = useState<LogoVariant>('white');
+    const [isTransparent, setIsTransparent] = useState(false);
+    const [logoVariant, setLogoVariant] = useState<LogoVariant>('colored');
 
     const setNavigationState = (newIsTransparent: boolean, newLogoVariant: LogoVariant) => {
         setIsTransparent(newIsTransparent);
