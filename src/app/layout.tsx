@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Footer, Header } from "@/components/navigation";
-import { NavigationProvider } from "@/providers/navigation-provider";
+import { NavigationProvider, ToastProvider } from "@/providers";
 import WinningTeam from "@/components/containers/winning-team";
 import { cn } from "@/lib/utils";
 
@@ -34,15 +34,16 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          `${playfairDisplay.variable} ${satoshi.variable} font-sans antialiased overflow-x-hidden bg-primary`,
+          `${playfairDisplay.variable} ${satoshi.variable} font-sans antialiased overflow-x-hidden bg-transparent`,
         )}
       >
+        <ToastProvider />
         <NavigationProvider>
           <Header />
           {children}
+          <WinningTeam />
+          <Footer />
         </NavigationProvider>
-        <WinningTeam />
-        <Footer />
       </body>
     </html>
   );
