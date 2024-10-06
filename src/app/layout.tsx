@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Footer, Header } from "@/components/navigation";
 import { NavigationProvider } from "@/providers/navigation-provider";
+import WinningTeam from "@/components/containers/winning-team";
+import { cn } from "@/lib/utils";
 
 const playfairDisplay = localFont({
   src: "./fonts/PlayfairDisplay-VariableFont_wght.ttf",
@@ -31,12 +33,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfairDisplay.variable} ${satoshi.variable} antialiased bg-primary`}
+        className={cn(
+          `${playfairDisplay.variable} ${satoshi.variable} font-sans antialiased overflow-x-hidden bg-primary`,
+        )}
       >
         <NavigationProvider>
           <Header />
           {children}
         </NavigationProvider>
+        <WinningTeam />
         <Footer />
       </body>
     </html>
