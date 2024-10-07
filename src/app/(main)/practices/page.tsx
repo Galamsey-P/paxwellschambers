@@ -41,7 +41,7 @@ export default function Practices() {
                 <h2 className="text-center">
                     We specialize in
                 </h2>
-                <div className=" grid gap-4 grid-cols-1 lg:grid-cols-3">
+                <div className=" grid gap-2 md:gap-4 grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
                     {
                         isValidArray(PRACTICES2) && PRACTICES2.map((practice, idx) => (
                             <PracticeCard label={practice} key={idx} />
