@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "../ui/button";
 
 export default function WinningTeam() {
@@ -13,9 +14,11 @@ export default function WinningTeam() {
                     sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua.
                 </p>
-                <Button>
-                    Join The Winning Team
-                </Button>
+                <Link href="/contact">
+                    <Button className="max-lg:max-w-md mx-auto">
+                        Join The Winning Team
+                    </Button>
+                </Link>
             </div>
         </section>
     );

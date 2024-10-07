@@ -25,25 +25,25 @@ export default function Contact() {
                             our client, deserves the best
                         </p>
 
-                        <div className="flex flex-col gap-2">
-                            <p className="mb-2">
+                        <div className="flex flex-col gap-1">
+                            <p className="mb-2 text-neutral-600">
                                 Email:
                             </p>
                             {
                                 isValidArray(CONTACT?.emails) && CONTACT?.emails.map((email, idx) => (
-                                    <Link href={`mailto:${email}`} key={idx} className="hover:underline transition duration-300" >
+                                    <Link href={`mailto:${email}`} key={idx} className="hover:underline font-bold transition duration-300" >
                                         {email?.toLowerCase()}
                                     </Link>
                                 ))
                             }
                         </div>
-                        <div className="flex flex-col gap-2">
-                            <p className="mb-2">
+                        <div className="flex flex-col gap-1">
+                            <p className="mb-2 text-neutral-600">
                                 Phone:
                             </p>
                             {
                                 isValidArray(CONTACT?.phones) && CONTACT?.phones.map((email, idx) => (
-                                    <Link href={`tel:${email}`} key={idx} className="hover:underline transition duration-300" >
+                                    <Link href={`tel:${email}`} key={idx} className="hover:underline font-bold transition duration-300" >
                                         {email?.toLowerCase()}
                                     </Link>
                                 ))
@@ -52,7 +52,7 @@ export default function Contact() {
 
                     </div>
 
-                    <AbsoluteImage src="contact-man.png" style=" w-[390px] xl:w-[700px]  2xl:w-[790px] lg:right-10 bottom-0 " width={814} height={813} />
+                    <AbsoluteImage src="contact-man.png" style=" w-[390px] lg:w-[600px] xl:w-[700px]  2xl:w-[790px] lg:right-10 bottom-0 " width={814} height={813} />
                 </div>
             </section>
             <MapContainer />

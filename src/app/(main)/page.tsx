@@ -75,11 +75,11 @@ export default function Home() {
           </div>
           <RelativeImage src="arrow.png" containerStyles="w-[100px] lg:w-[150px]  " width={226} height={226} />
         </div>
-        <AbsoluteImage src="scales.png" style='left-0 bottom-0 w-[200px] lg:w-[700px]  ' width={739} height={729} />
+          <AbsoluteImage src="scales.png" style='left-0 bottom-0 w-[200px] md:w-[350px] lg:w-[500px]  xl:w-[600px]  2xl:w-[700px]  ' width={739} height={729} />
       </section>
       <section className="bg-gradient-to-b lg:bg-gradient-to-r from-[#486A8133]  to-[#2E556F33] h-full min-h-[90vh] relative ">
         <div className="container w-full flex flex-col  lg:flex-row items-center h-full min-h-[90vh] mx-auto relative">
-          <div className=" w-full flex flex-col  h-full justify-center gap-4 max-w-xl py-12 ">
+          <div className=" w-full flex flex-col  h-full justify-center gap-4 max-w-xl py-12 px-2">
             <Subtitle title="who we are" />
             <h2>
               A Law Firm with <span className="text-deep-sb"> over 50
@@ -102,7 +102,7 @@ export default function Home() {
           <AbsoluteImage src="lawyers.png" style=" w-[390px] xl:w-[600px]  2xl:w-[779px] lg:right-10 bottom-0 " width={779} height={724} />
         </div>
       </section>
-      <section className="container mx-auto  py-8 grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <section className="container mx-auto  py-8 grid grid-cols-1 lg:grid-cols-2 px-4 gap-4">
         <div className="grid grid-cols-2 max-lg:gap-2 lg:gap-x-4">
           {isValidArray(PRACTICES) && PRACTICES.map((label, idx) => (
             <PracticeCard label={label} key={idx} />
@@ -127,9 +127,9 @@ export default function Home() {
         </div>
       </section>
       <section className="lg:py-20"></section>
-      <section className="bg-[#F6F6F6] h-full min-h-[70vh] relative ">
+      <section className="bg-[#F6F6F6] h-full min-h-[70vh] relative px-4 ">
         <div className="container w-full flex flex-col  lg:flex-row items-center h-full min-h-[70vh] mx-auto relative">
-          <div className=" w-full flex flex-col  h-full justify-center gap-4 max-w-xl py-12 ">
+          <div className=" w-full flex flex-col  h-full justify-center gap-4 max-w-2xl mx-auto  py-12 px-2 ">
             <Subtitle title="OUR VISION & MISSION" />
             <h2>
               To remain a <span className="text-deep-sb"> top firm</span> that offers the <span className="text-deep-sb"> best legal services </span>
@@ -146,15 +146,15 @@ export default function Home() {
                 Work With Us
               </Button>
             </Link>
-            <RelativeImage src="golawyers.png" width={842} height={928} containerStyles="w-full xl:w-[650px]  2xl:w-[810px] md:hidden mt-4" />
+            <RelativeImage src="golawyers.png" width={842} height={928} containerStyles="w-full xl:w-[650px]  2xl:w-[810px] xl:hidden mt-4" />
           </div>
 
         </div>
-        <AbsoluteImage src="golawyers.png" style=" w-full xl:w-[650px]  2xl:w-[810px] lg:-right-4 -bottom-20 hidden md:block " width={842} height={928} />
+        <AbsoluteImage src="golawyers.png" style=" w-full xl:w-[450px]  2xl:w-[810px] lg:-right-4 -bottom-20 hidden xl:block " width={842} height={928} />
       </section>
-      <section className="lg:py-20"></section>
+      <section className="lg:py-16"></section>
 
-      <section className="py-8 flex flex-col gap-8 w-full">
+      <section className="pb-12 flex flex-col gap-8 w-full">
         <div className="container mx-auto ">
 
           <Subtitle title="Testimonials" className="ml-auto w-max  " />

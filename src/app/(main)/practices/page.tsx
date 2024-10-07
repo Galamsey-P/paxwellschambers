@@ -13,7 +13,7 @@ export default function Practices() {
 
             <section className="bg-gradient-to-b lg:bg-gradient-to-r from-[#486A811A]  to-[#2E556F1A] h-full lg:mt-8 min-h-[110vh] relative ">
                 <div className="container w-full flex flex-col  lg:flex-row items-center h-full min-h-[110vh] mx-auto ">
-                    <div className=" w-full flex flex-col  h-full justify-center gap-4 max-w-2xl py-12 ">
+                    <div className=" w-full flex flex-col  h-full justify-center gap-4 max-w-2xl py-12 px-2">
                         <Subtitle title="what we provide" />
                         <h2>
                             We offer <span className="text-deep-sb">legal assistance</span>  in a wide
@@ -35,13 +35,13 @@ export default function Practices() {
                     </div>
 
                 </div>
-                <AbsoluteImage src="gavl.png" style="w-[390px] xl:w-[570px]  2xl:w-[634px] right-0 bottom-0 " width={634} height={833} />
+                <AbsoluteImage src="gavl.png" style="w-[350px] xl:w-[570px]  2xl:w-[634px] right-0 bottom-0 " width={634} height={833} />
             </section>
-            <section className="bg-gradient-to-b lg:bg-gradient-to-r from-[#486A811A]  to-[#2E556F1A] min-h-screen flex flex-col gap-8 items-center justify-center">
+            <section className="bg-gradient-to-b lg:bg-gradient-to-r from-[#486A811A]  to-[#2E556F1A] min-h-screen flex flex-col gap-8 items-center justify-center pb-4 px-2">
                 <h2 className="text-center">
                     We specialize in
                 </h2>
-                <div className=" grid gap-4 grid-cols-2 lg:grid-cols-3">
+                <div className=" grid gap-4 grid-cols-1 lg:grid-cols-3">
                     {
                         isValidArray(PRACTICES2) && PRACTICES2.map((practice, idx) => (
                             <PracticeCard label={practice} key={idx} />

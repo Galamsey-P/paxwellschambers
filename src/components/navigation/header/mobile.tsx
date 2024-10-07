@@ -39,7 +39,7 @@ export default function MobileNav() {
 
                 <div className="font-sans  h-[60%]  flex flex-col items-center  pt-4 gap-4">
                     {isValidArray(PAGES) && PAGES.map((page, idx) => (
-                        <SheetClose className=" w-full text-center py-2 hover:bg-whyte rounded-md" key={idx}>
+                        <SheetClose asChild className=" w-full text-center py-2 hover:bg-whyte rounded-md" key={idx}>
 
                             <Link href={page?.href} >
                                 {page?.title}

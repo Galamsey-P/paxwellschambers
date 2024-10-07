@@ -18,9 +18,9 @@ export default function Footer() {
         )}>
 
             <div className={cn(
-                "container mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 "
+                "container mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-y-8 "
             )}>
-                <div className="col-span-1 xl:col-span-2  flex flex-col justify-between min-h-[50vh]">
+                <div className="col-span-1 xl:col-span-2  flex flex-col  gap-8 justify-between lg:min-h-[50vh]">
                     <div className="flex flex-col gap-2">
                         <Subtitle title="contact" className="text-white/70" />
                         <h2 className="font-sans uppercase font-bold tracking-wider">

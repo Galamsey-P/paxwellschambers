@@ -16,8 +16,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import schema from "./schema";
-
-
+import { useEffect } from "react";
 
 export default function ContactForm() {
     const form = useForm<z.infer<typeof schema>>({
@@ -29,9 +28,16 @@ export default function ContactForm() {
         },
     });
 
+    // Reset form when component mounts
+    useEffect(() => {
+        form.reset();
+    }, [form]);
+
     function onSubmit(values: z.infer<typeof schema>) {
         console.log(values);
         toast.success("Your request has been sent!");
+        // Reset form after successful submission
+        form.reset();
     }
 
     return (

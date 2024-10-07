@@ -14,8 +14,7 @@ export default function TitanCard({ item }: Props) {
                 src={`/images/${item.image}`}
                 alt={item.name}
                 layout="fill"
-                objectFit="cover"
-                className="absolute inset-0 transition-transform duration-300 group-hover:scale-105 "
+                className="absolute inset-0 transition-transform object-cover duration-300 group-hover:scale-105 "
             />
             <div className="absolute bottom-2 left-2 right-2  text-center rounded bg-white p-2">
                 <p className="text-sm font-serif uppercase font-bold line-clamp-1">{item.name}</p>
