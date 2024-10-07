@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"network": "next dev -H 192.168.100.36",
+		"network": "next dev -H 192.168.1.50",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint"
@@ -22,6 +22,7 @@
 		"@types/lodash": "^4.17.9",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.1.1",
+		"framer-motion": "^11.11.1",
 		"lodash": "^4.17.21",
 		"lucide-react": "^0.446.0",
 		"next": "14.2.13",
