@@ -129,7 +129,7 @@ export default function Home() {
       <section className="lg:py-20"></section>
       <section className="bg-[#F6F6F6] h-full min-h-[70vh] relative px-4 ">
         <div className="container w-full flex flex-col  lg:flex-row items-center h-full min-h-[70vh] mx-auto relative">
-          <div className=" w-full flex flex-col  h-full justify-center gap-4 max-w-2xl mx-auto  py-12 px-2 ">
+          <div className=" w-full flex flex-col  h-full justify-center gap-4 max-w-2xl mr-auto  py-12 px-2 ">
             <Subtitle title="OUR VISION & MISSION" />
             <h2>
               To remain a <span className="text-deep-sb"> top firm</span> that offers the <span className="text-deep-sb"> best legal services </span>
