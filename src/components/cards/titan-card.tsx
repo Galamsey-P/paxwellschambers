@@ -27,9 +27,9 @@ export default function TitanCard({ item }: Props) {
                     <p className="text-xs text-gray-500">{item.education}</p>
                     <p className="text-xs text-gray-600">{item.position}</p>
                 </div>
-                <div className="w-full">
+                <div className="w-full pb-3 px-2">
 
-                <p className="text-white">{item.description}</p>
+                <p className="text-white text-left">{item.description}</p>
                 </div>
             </div>
         </div>
