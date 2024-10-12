@@ -1,14 +1,14 @@
 export const PRACTICES = [
-    "Family Law",
-    "Health Law",
-    "Business Law",
-    "Sports Law",
-    "Family Law",
-    "Health Law",
-    "Business Law",
-    "Sports Law",
-    "Legal Service",
-    "Legal Service",
+    "Corporate/Company Law",
+    "Acquisitons & Mergers",
+    "Oil & Gas",
+    "Labour/Employment",
+    "Immovable Property Law",
+    "Human Rights",
+    "Matrimonial Law (Divorce)",
+    "Criminal Law",
+    "Information Technology",
+    "Entertainment & Arts",
 ];
 
 
